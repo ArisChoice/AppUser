@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_240sdp"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/color_app_background"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cover_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_sample2_copy"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        app:layout_collapseMode="parallax" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/cover_slider">
+
+                        <include layout="@layout/barber_detail_overlay_view" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/chk_fav_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:button="@drawable/check_fav_selector_new"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:contentInsetEnd="0dp"
+                    android:contentInsetLeft="0dp"
+                    android:contentInsetRight="0dp"
+                    android:contentInsetStart="0dp"
+                    android:visibility="gone"
+                    app:contentInsetEnd="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/_10ssp"
+                            android:background="@drawable/back_copy"
+                            android:padding="@dimen/_10ssp" />
+
+                        <com.app.barber.views.CustomTextView
+                            android:id="@+id/txt_toolbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/back"
+                            android:layout_toLeftOf="@+id/chk_bx_hedaer"
+                            android:layout_toRightOf="@+id/back"
+                            android:layout_toStartOf="@+id/chk_bx_hedaer"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:paddingRight="@dimen/_10ssp"
+                            android:text="Barber Detail"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/_15ssp"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/chk_bx_hedaer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/_10ssp"
+                            android:button="@drawable/check_fav_selector_new"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+                <com.app.barber.views.CustomTextView
+                    android:id="@+id/txt_Place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_13ssp" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <!--BARBER INFO-->
+            <include layout="@layout/divider_view_grey" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/barber_info_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_dark_grey"
+                android:drawableRight="@drawable/arrow_down_ico"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_barber_info"
+                android:textColor="@color/color_white" />
+
+            <include layout="@layout/divider_view_grey" />
+
+            <LinearLayout
+                android:id="@+id/barber_info_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_barberinfo_screen" />
+
+
+            </LinearLayout>
+            //-------------------------------------------------------------------------------------------------------------------------------------------
+            <!--REVIEW-->
+            <include layout="@layout/divider_view_grey" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/review_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_dark_grey"
+                android:drawableRight="@drawable/arrow_down_ico"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_reviews"
+                android:textColor="@color/color_white" />
+
+            <include layout="@layout/divider_view_grey" />
+
+            <LinearLayout
+                android:id="@+id/review_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <include layout="@layout/layout_review_screen" />
+                </android.support.v4.widget.NestedScrollView>
+
+            </LinearLayout>
+
+
+            //-------------------------------------------------------------------------------------------------------------------------------------------
+            <!--PORTFOLIO-->
+            <include layout="@layout/divider_view_grey" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/portfolio_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_dark_grey"
+                android:drawableRight="@drawable/arrow_down_ico"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_portfolio"
+                android:textColor="@color/color_white" />
+
+            <include layout="@layout/divider_view_grey" />
+
+            <LinearLayout
+                android:id="@+id/portfolio_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/layout_portfolio_screen" />
+
+
+            </LinearLayout>
+            //------------------------------------------------------------------------------------------------------------------
+
+            <!-- <android.support.design.widget.TabLayout
+                 android:id="@+id/tabs_detail_screen"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone"
+                 app:tabSelectedTextColor="@color/color_white"
+                 app:tabTextAppearance="@style/CustomTabText"
+                 app:tabTextColor="@color/color_white">
+
+             </android.support.design.widget.TabLayout>
+
+             <android.support.v4.view.ViewPager
+                 android:id="@+id/detail_pager"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:visibility="gone">
+
+             </android.support.v4.view.ViewPager>-->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

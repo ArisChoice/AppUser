@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10ssp"
+            android:layout_marginLeft="@dimen/_5ssp"
+            android:layout_marginRight="@dimen/_5ssp"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5ssp"
+                android:theme="@style/TextLabel"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="120dp">
+
+                <com.app.barber.views.CustomEditText
+                    android:id="@+id/edtxt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/str_user_name_"
+                    android:inputType="textNoSuggestions"
+                    android:lines="1"
+                    android:maxLength="50"
+                    android:padding="@dimen/_10ssp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/color_white"
+                    android:textSize="@dimen/_12ssp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5ssp"
+                android:theme="@style/TextLabel"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="120dp">
+
+                <com.app.barber.views.CustomEditText
+                    android:id="@+id/edtxt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/str_email_address"
+                    android:inputType="textNoSuggestions"
+                    android:lines="1"
+                    android:maxLength="50"
+                    android:padding="@dimen/_10ssp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/color_white"
+                    android:textSize="@dimen/_12ssp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5ssp"
+                android:theme="@style/TextLabel"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="120dp">
+
+                <com.app.barber.views.CustomEditText
+                    android:id="@+id/edtxt_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/str_phone_number"
+                    android:inputType="textNoSuggestions"
+                    android:lines="1"
+                    android:maxLength="50"
+                    android:padding="@dimen/_10ssp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/color_white"
+                    android:textSize="@dimen/_12ssp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5ssp"
+                android:theme="@style/TextLabel"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="120dp">
+
+                <com.app.barber.views.CustomEditText
+                    android:id="@+id/edtxt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/str_password"
+                    android:inputType="textNoSuggestions"
+                    android:lines="1"
+                    android:maxLength="50"
+                    android:padding="@dimen/_10ssp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/color_white"
+                    android:textSize="@dimen/_12ssp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/_30ssp"
+        android:layout_marginRight="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_30ssp"
+        android:src="@drawable/arrow_button" />
+</LinearLayout>

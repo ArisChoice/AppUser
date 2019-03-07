@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3D9ADC</color>
+    <color name="colorPrimaryDark">#3D9ADC</color>
+    <color name="colorAccent">#3D9ADC</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_grey">#6b6667</color>
+    <color name="color_light_grey">#A0A0A0</color>
+    <color name="colorPrimary_transe">#223D9ADC</color>
+
+    <color name="color_selector_blue">#162432</color>
+    <color name="color_light_grey_blue">#8B98B4</color>
+    <color name="color_app_background">#2AB3FF</color>
+    <color name="color_app_cream_white_background">#F6F7F8</color>
+    <color name="color_app_blue">#2AB3FF</color>
+    <color name="color_red">#FF1D44</color>
+    <color name="color_dark_grey">#2D3941</color>
+    <color name="color_serch_view_back">#273949</color>
+    <color name="color_black_trans">#88000000</color>
+    <color name="color_grey_new">#202930</color>
+    <color name="color_yellow">#EFCE4A</color>
+    <color name="color_facebook">#38569D</color>
+    <color name="color_status_pink">#FF63A6</color>
+    <color name="color_green">#47C593</color>
+    <color name="color_light_green">#76DA80</color>
+    <color name="color_orange_clay">#FF9050</color>
+    <color name="color_grey_white">#E4E4E4</color>
+    <color name="color_notification_blue">#6385FF</color>
+    <color name="color_notification_pink">#FF63A6</color>
+</resources>

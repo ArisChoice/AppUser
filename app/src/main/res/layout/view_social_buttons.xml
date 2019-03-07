@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10ssp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100ssp"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/color_light_grey_blue"
+            android:gravity="center_vertical" />
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="@dimen/_100ssp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/str_or"
+            android:textColor="@color/color_light_grey_blue"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="@dimen/_100ssp"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/color_light_grey_blue"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10ssp">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/imgVw_fb_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5ssp"
+            android:layout_weight="1"
+            android:background="@color/color_facebook"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_facebook"
+            android:textColor="@color/color_white" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/imgVw_google_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5ssp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_grey_border"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_google" />
+
+    </LinearLayout>
+
+</LinearLayout>

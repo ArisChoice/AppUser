@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_common_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10ssp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15ssp"
+                    android:paddingRight="@dimen/_15ssp"
+                    android:text="SUPER BARBER"
+                    android:textColor="@color/color_white" />
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10ssp"
+                    android:paddingLeft="@dimen/_15ssp"
+                    android:paddingRight="@dimen/_15ssp"
+                    android:text="Fashion festa barber"
+                    android:textColor="@color/color_white" />
+
+                <include layout="@layout/divider_view_grey" />
+
+                <include layout="@layout/transaction_detail_one" />
+
+                <include layout="@layout/divider_view_grey" />
+
+                <include layout="@layout/transaction_detail_two" />
+
+                <include layout="@layout/divider_view_grey" />
+
+                <include layout="@layout/transaction_detail_three" />
+
+                <include layout="@layout/divider_view_grey" />
+
+                <include layout="@layout/transaction_detail_four" />
+
+                <include layout="@layout/divider_view_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10ssp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.app.barber.views.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Cash paid"
+                            android:textColor="@color/color_white" />
+
+                        <com.app.barber.views.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Tax  free   $ 0.0"
+                            android:textColor="@color/color_light_grey_blue" />
+                    </LinearLayout>
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ 60"
+                        android:textColor="@color/color_white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_8ssp"
+            android:text="@string/str_send_me_recipt_by_mail"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

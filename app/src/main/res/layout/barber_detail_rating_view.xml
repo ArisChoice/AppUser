@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_cream_white_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/avg_rate_txt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/star_color"
+                android:drawablePadding="@dimen/_5ssp"
+                android:text="0.0"
+                android:textSize="@dimen/_15ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avg rating"
+                android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/punctuality_rate_txt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/check_"
+                android:drawablePadding="@dimen/_5ssp"
+                android:drawableTint="@color/color_green"
+                android:text="0.0"
+                android:textSize="@dimen/_15ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Punctuality"
+                android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/reviews_txt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/like_color"
+                android:drawablePadding="@dimen/_5ssp"
+                android:text="00"
+                android:textSize="@dimen/_15ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

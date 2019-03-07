@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar_trans" />
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_iam_a"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_18ssp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/type_barber_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5ssp"
+                android:background="@drawable/rectangle_selected_type_drawable"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_20ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/text_type_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_barber"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_barber_desc"
+                        android:textColor="@color/color_light_grey_blue" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_check_type_one"
+                    android:layout_width="@dimen/_20ssp"
+                    android:layout_height="@dimen/_20ssp"
+                    android:src="@drawable/icon_copy"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <!--Type two Layout-->
+            <LinearLayout
+                android:id="@+id/type_callout_barber_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5ssp"
+                android:background="@drawable/rectangle_unselected_type_drawable"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_20ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/text_type_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_callout_barber"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_callout_barber_desc"
+                        android:textColor="@color/color_light_grey_blue" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_check_type_two"
+                    android:layout_width="@dimen/_20ssp"
+                    android:layout_height="@dimen/_20ssp"
+                    android:src="@drawable/icon_copy"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!--Type three layout-->
+            <LinearLayout
+                android:id="@+id/type_tranee_barber_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5ssp"
+                android:background="@drawable/rectangle_unselected_type_drawable"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_20ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/text_type_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_trainee"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_trainee_barber_desc"
+                        android:textColor="@color/color_light_grey_blue" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_check_type_three"
+                    android:layout_width="@dimen/_20ssp"
+                    android:layout_height="@dimen/_20ssp"
+                    android:src="@drawable/icon_copy"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/_30ssp"
+        android:layout_marginRight="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:src="@drawable/arrow_button" />
+
+</LinearLayout>

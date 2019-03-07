@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_add_tip_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:visibility="visible">
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"
+
+        android:text="@string/str_add_a_tip"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/tip_txt_add"
+            android:layout_width="@dimen/_42ssp"
+            android:layout_height="@dimen/_42ssp"
+
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/circular_grey_border"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="@dimen/_22ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/tip_txt_2"
+            android:layout_width="@dimen/_42ssp"
+            android:layout_height="@dimen/_42ssp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/circular_grey_border"
+            android:gravity="center"
+            android:text="£2"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/tip_txt_5"
+            android:layout_width="@dimen/_42ssp"
+            android:layout_height="@dimen/_42ssp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/circular_grey_border"
+            android:gravity="center"
+            android:text="£5"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/tip_txt_10"
+            android:layout_width="@dimen/_42ssp"
+            android:layout_height="@dimen/_42ssp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/circular_grey_border"
+            android:gravity="center"
+            android:text="£10"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.app.barber.views.CustomEditText
+        android:id="@+id/amount_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rectangle_grey_border"
+        android:gravity="center"
+        android:hint="£0"
+        android:inputType="number"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone" />
+
+</LinearLayout>

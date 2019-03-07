@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/receiverLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10ssp"
+    android:layout_marginRight="@dimen/_40ssp"
+    android:layout_marginTop="@dimen/_5ssp"
+    android:orientation="vertical"
+    tools:visibility="visible">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgUserImage"
+        android:layout_width="@dimen/_45ssp"
+        android:layout_height="@dimen/_45ssp"
+        android:src="@drawable/user2_copy"
+        app:placeholderImage="@drawable/user1_copy"
+        app:roundAsCircle="true" />
+
+    <LinearLayout
+        android:id="@+id/linearChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:layout_marginRight="@dimen/_10ssp"
+        android:layout_toRightOf="@+id/imgUserImage"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="@dimen/_5ssp">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_blue_drawable_receiver"
+            android:padding="@dimen/_10sdp"
+            android:text="Hi! how are you?"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/txtMessageDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:text="1 Seconds ago"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/_10ssp"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

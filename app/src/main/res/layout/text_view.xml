@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.barber.views.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    android:background="@drawable/rectangle_green_drawable"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:text="@string/str_barber"
+    android:textColor="@color/color_white"
+    android:textSize="@dimen/_10ssp" />

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_background"
+    android:orientation="vertical"
+    android:padding="@dimen/_10ssp">
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/booking_type_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_5ssp"
+        android:paddingTop="@dimen/_5ssp"
+        android:text="@string/str_book_appointment"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_15ssp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/weekViewRecyclar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_5ssp"
+        android:paddingTop="@dimen/_5ssp"
+        android:text="@string/str_availabliity_slots"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_15ssp" />
+
+    <include layout="@layout/layout_common_recyclay_view" />
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/cnfirm_Booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rounder_blue_drawable"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_10ssp"
+        android:paddingTop="@dimen/_10ssp"
+        android:text="@string/str_cnfrm_"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_14ssp" />
+</LinearLayout>

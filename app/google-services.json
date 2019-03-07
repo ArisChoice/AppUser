@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "909331114935",
+    "firebase_url": "https://trimcheck-customer.firebaseio.com",
+    "project_id": "trimcheck-customer",
+    "storage_bucket": "trimcheck-customer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909331114935:android:ed8c3c9f3f99a395",
+        "android_client_info": {
+          "package_name": "com.app.trimcheck.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909331114935-j9r6i66gfv35cgsid0elr33ieoj5s069.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.trimcheck.customer",
+            "certificate_hash": "e6263d0e4c821963afba526fc5a106b6d612b9e8"
+          }
+        },
+        {
+          "client_id": "909331114935-ts5732tnnm51f88aklhj8e10h0koq916.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB11LFn7SBQtEQ5P88gt7qSRL3JYSve7qw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909331114935-ts5732tnnm51f88aklhj8e10h0koq916.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

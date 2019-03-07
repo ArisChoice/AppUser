@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white_border"
+    android:orientation="vertical"
+    android:padding="@dimen/_5ssp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_filter"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_15ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/reset_filter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_default_click"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_reset"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_filter_barber_ststus" />
+
+        <include layout="@layout/layout_filter_style_view" />
+
+        <include layout="@layout/layout_filter_price_view" />
+
+        <include layout="@layout/layout_filter_payment_view" />
+
+        <!--<include layout="@layout/layout_filter_services_view" />-->
+    </LinearLayout>
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/apply_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rounder_blue_drawable"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_apply"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_14ssp" />
+
+</LinearLayout>

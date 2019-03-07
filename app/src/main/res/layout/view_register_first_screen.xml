@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_5ssp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="120dp">
+
+            <com.app.barber.views.CustomEditText
+                android:id="@+id/edtxt_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="@string/str_first_name"
+                android:inputType="textNoSuggestions|textCapWords"
+                android:lines="1"
+                android:maxLength="50"
+                android:paddingBottom="@dimen/_10ssp"
+                android:paddingLeft="@dimen/_5ssp"
+                android:paddingRight="@dimen/_5ssp"
+                android:paddingTop="@dimen/_10ssp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/color_white"
+                android:textSize="@dimen/_12ssp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_5ssp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="120dp">
+
+            <com.app.barber.views.CustomEditText
+                android:id="@+id/edtxt_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="@string/str_last_name"
+                android:inputType="textNoSuggestions|textCapWords"
+                android:lines="1"
+                android:maxLength="50"
+                android:paddingBottom="@dimen/_10ssp"
+                android:paddingLeft="@dimen/_5ssp"
+                android:paddingRight="@dimen/_5ssp"
+                android:paddingTop="@dimen/_10ssp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/color_white"
+                android:textSize="@dimen/_12ssp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            foo:ccp_contentColor="@color/color_white"
+            foo:ccp_textSize="@dimen/_12ssp"
+            foo:ccp_defaultPhoneCode="1" />
+
+
+        <com.app.barber.views.CustomEditText
+            android:id="@+id/edtxt_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:hint="@string/str_phone_number"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="50"
+            android:padding="@dimen/_10ssp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/color_light_grey_blue"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <com.app.barber.views.CustomEditText
+        android:id="@+id/edtxt_invitation_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="@string/str_invitation_code"
+        android:lines="1"
+        android:maxLength="50"
+        android:padding="@dimen/_10ssp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/color_light_grey_blue"
+        android:textSize="@dimen/_13ssp"
+        android:visibility="gone" />
+
+</LinearLayout>

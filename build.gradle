@@ -1,0 +1,67 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+
+        classpath 'com.google.gms:google-services:4.2.0'
+        classpath 'io.fabric.tools:gradle:1.26.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
+        maven {
+            url "https://github.com/QuickBlox/quickblox-android-sdk-releases/raw/master/"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+// Define versions in a single place
+ext {
+    // Sdk and tools
+    minSdkVersion = 18
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.1'
+
+    //retrofit
+    retroVersin = '2.0.2'
+    gsonVersion = '2.8.2'
+    retroLoginterceptor = '3.6.0'
+
+    // App dependencies
+    supportLibraryVersion = '27.0.+'
+    calligraphyVersion = '2.2.0'
+    glideVersion = '3.7.0'
+    butterKnife = '8.8.1'
+
+    dagger2Version = '2.14.1'
+    // Test dependencies
+    junitVersion = '4.12'
+    espressoVersion = '3.0.1'
+    mockitoVersion = '2.15.0'
+
+    //google services
+    googleService = '16.0.0'
+    firebaseVersion = '16.0.5'
+    firebaseMessageVersion = '17.3.4'
+    quickBloxSdk = '3.8.1'
+}

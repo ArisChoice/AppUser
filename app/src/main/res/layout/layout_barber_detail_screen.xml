@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_cream_white_background"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:expandedTitleMarginStart="60dp">
+
+        <include layout="@layout/barber_detail_top_view" />
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cover_slider"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5ssp">
+
+                    <include layout="@layout/barber_detail_overlay_view" />
+
+                    <include layout="@layout/barber_detail_rating_view" />
+                    <!---->
+                    <LinearLayout
+                        android:id="@+id/barner_type_holder_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_10ssp"
+                        android:paddingRight="@dimen/_10ssp">
+
+
+                    </LinearLayout>
+                    <!---->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_10ssp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_10ssp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <com.app.barber.views.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="@string/str_service_"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <com.app.barber.views.CustomEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rectangle_white_border"
+                            android:drawableLeft="@drawable/search"
+                            android:drawablePadding="@dimen/_10ssp"
+                            android:drawableTint="@color/color_grey"
+                            android:hint="@string/search_hint"
+                            android:paddingLeft="@dimen/_10ssp"
+                            android:textSize="@dimen/_12ssp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/service_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10ssp"
+                        android:paddingRight="@dimen/_10ssp"
+                        android:text="@string/str_about"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <include layout="@layout/barber_about_view" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10ssp"
+                        android:paddingRight="@dimen/_10ssp"
+                        android:text="@string/str_rating_review"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <include layout="@layout/barber_review_rating_view" />
+
+                    <include layout="@layout/barber_rating_skills_service_view" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/review_recyclar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/cancellation_policy_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/general_default_click"
+                        android:paddingLeft="@dimen/_10ssp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_10ssp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/str_check_cancellation_policy"
+                        android:textColor="@color/color_light_grey_blue" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/booking_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_selected_appointments" />
+    </LinearLayout>
+</LinearLayout>

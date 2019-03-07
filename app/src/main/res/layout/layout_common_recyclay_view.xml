@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclar_view_lst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/no_list_data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/logo_copy"
+        android:drawablePadding="@dimen/_10ssp"
+        android:drawableTint="@color/color_app_blue"
+        android:gravity="center"
+        android:padding="@dimen/_30ssp"
+        android:text="@string/str_empty_space"
+        android:textColor="@color/color_light_grey_blue"
+        android:visibility="gone" />
+
+</LinearLayout>

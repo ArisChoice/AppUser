@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:orientation="vertical">
+        <!---->
+
+        <LinearLayout
+            android:id="@+id/booking_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_current_time_slot" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/current_time_slot_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/clock"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="9:00 AM - 10:00 AM"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/current_date_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_1ssp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_1ssp"
+                        android:singleLine="true"
+                        android:text="1 hrs left"
+                        android:textSize="@dimen/_10ssp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_view_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_requested_time"
+                    android:textColor="@color/color_red" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/requested_time_slot_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/clock"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="9:00 AM - 10:00 AM"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/requested_date_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_1ssp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_1ssp"
+                        android:singleLine="true"
+                        android:text="1 hrs left"
+                        android:textSize="@dimen/_10ssp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!---->
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/user_image_vw"
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_5sdp"
+                app:placeholderImage="@drawable/user1_copy"
+                app:roundAsCircle="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <com.app.barber.views.CustomTextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="User name"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <com.app.barber.views.CustomTextView
+                    android:id="@+id/user_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="User service"
+                    android:textSize="@dimen/_10ssp" />
+            </LinearLayout>
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/payable_apount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10ssp"
+                android:text="$40"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_14ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/payment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:background="@drawable/rectangle_green_drawable"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingTop="@dimen/_1ssp"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_1ssp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

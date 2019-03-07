@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/str_upcoming"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_14ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_grey_border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10ssp"
+                android:paddingRight="@dimen/_10ssp">
+
+                <com.app.barber.views.CustomTextView
+                    android:id="@+id/booking_Day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thu" />
+
+                <com.app.barber.views.CustomTextView
+                    android:id="@+id/booking_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:textSize="@dimen/_18sdp" />
+            </LinearLayout>
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/booking_Month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dec" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include layout="@layout/layout_appointment_view" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

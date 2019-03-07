@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white_border"
+    android:backgroundTint="@color/color_app_cream_white_background"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/str_received_edit_request"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_5sdp"
+        android:singleLine="true"
+        android:text="@string/str_edit_request_status"
+        android:textSize="@dimen/_12sdp" />
+
+    <include layout="@layout/divider_view_grey" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/edit_recyclar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

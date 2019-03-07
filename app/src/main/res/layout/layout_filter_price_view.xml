@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="@string/str_price"
+        android:textColor="@color/color_grey" />
+
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:id="@+id/priceRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:absoluteMaxValue="0"
+        app:absoluteMinValue="500"
+        rsb:step="10" />
+</LinearLayout>

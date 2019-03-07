@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_165sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_background"
+        android:paddingBottom="@dimen/_50sdp">
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/location_filter_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10ssp"
+                android:drawableRight="@drawable/arrow_down_ico"
+                android:drawableTint="@color/color_white"
+                android:padding="@dimen/_10ssp"
+                android:singleLine="true"
+                android:text="Location"
+                android:textColor="@color/color_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/map_gray"
+                    android:drawablePadding="@dimen/_10ssp"
+                    android:drawableTint="@color/color_white"
+                    android:gravity="right"
+                    android:padding="@dimen/_10ssp"
+                    android:text="@string/str_show_map"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.app.barber.views.CustomEditText
+            android:id="@+id/search_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10ssp"
+            android:layout_marginRight="@dimen/_10ssp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/rounded_white_background"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="@dimen/_8ssp"
+            android:drawableTint="@color/color_light_grey"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/str_search_barber"
+            android:padding="@dimen/_8ssp"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:layout_marginRight="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/rounded_white_background"
+        android:elevation="@dimen/_2sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/barber_type_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTint="@color/color_app_blue"
+                android:drawableTop="@drawable/scissors"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_barber"
+                android:textColor="@color/color_light_grey" />
+        </LinearLayout>
+        <!---->
+        <View
+            android:layout_width="0.001sp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/color_grey_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/day_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTint="@color/color_app_blue"
+                android:drawableTop="@drawable/calendar_2"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_today"
+                android:textColor="@color/color_light_grey" />
+        </LinearLayout>
+        <!---->
+        <View
+            android:layout_width="0.001sp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/color_grey_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/filter_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTint="@color/color_app_blue"
+                android:drawableTop="@drawable/filter"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_filter"
+                android:textColor="@color/color_light_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

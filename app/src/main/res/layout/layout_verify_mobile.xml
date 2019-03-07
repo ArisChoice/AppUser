@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- <include layout="@layout/layout_common_top_logo" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rounded_white_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_white_background"
+            android:orientation="vertical"
+            android:padding="@dimen/_5ssp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10ssp"
+                    android:text="@string/str_verify_mobile_number"
+                    android:textColor="@color/color_app_background" />
+
+                <ImageView
+                    android:id="@+id/close_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:padding="@dimen/_10ssp"
+                    android:src="@drawable/close_1"
+                    android:tint="@color/color_grey" />
+            </LinearLayout>
+
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10ssp"
+                android:paddingRight="@dimen/_10ssp"
+                android:text="@string/enter_otp_verify_mobile" />
+
+            <com.app.barber.views.CustomEditText
+                android:id="@+id/otp_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_grey_border"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/_10ssp"
+                android:singleLine="true"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10ssp">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_didnt_received_code"
+                    android:textColor="@color/color_black" />
+
+                <com.app.barber.views.CustomTextView
+                    android:id="@+id/resend_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_resend_otp"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/btn_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_20ssp"
+                android:background="@drawable/rectangle_blue_drawable"
+                android:gravity="center"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_verify"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<include layout="@layout/layout_verification_number_new" />-->
+</LinearLayout>

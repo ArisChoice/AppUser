@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_background"
+    android:orientation="vertical">
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_when"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/divider_view_grey" />
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10ssp"
+        android:paddingRight="@dimen/_10ssp"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="@string/str_select_date"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/weekViewRecyclar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:layout_marginRight="@dimen/_10ssp" />
+
+    <include layout="@layout/divider_view_grey" />
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_select_time"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/btn_anytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_grey_border"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_any_time"
+            android:textColor="@color/color_grey" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/btn_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_grey_border"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_morning"
+            android:textColor="@color/color_grey" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/btn_afternoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_grey_border"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_evening"
+            android:textColor="@color/color_grey" />
+    </LinearLayout>
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/btn_cnfrm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rounder_blue_drawable"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_confirm"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_14ssp" />
+
+</LinearLayout>

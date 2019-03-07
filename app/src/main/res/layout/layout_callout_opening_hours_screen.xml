@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar_trans" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:orientation="vertical">
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_your_opening_hours"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_16ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_when_can"
+            android:textColor="@color/color_light_grey_blue"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_view_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10ssp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_common_recyclay_view" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/_20ssp"
+        android:layout_marginRight="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_80ssp"
+        android:src="@drawable/arrow_button" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rate_view_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_60ssp"
+        android:layout_height="@dimen/_60ssp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/barber_image"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            app:placeholderImage="@drawable/profile_"
+            app:roundAsCircle="true"
+            app:roundingBorderColor="@color/color_grey_white"
+            app:roundingBorderWidth="@dimen/_1ssp" />
+
+        <ImageView
+            android:id="@+id/barber_status"
+            android:layout_width="@dimen/_20ssp"
+            android:layout_height="@dimen/_20ssp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circular_pink_background"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/flash_color"
+            android:tint="@color/color_white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10ssp"
+        android:paddingRight="@dimen/_10ssp">
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_rate_your_barber"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5" />
+    </LinearLayout>
+
+</LinearLayout>

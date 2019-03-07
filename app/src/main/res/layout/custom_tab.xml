@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_background"
+    android:gravity="center"
+
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         />
+
+    <com.app.barber.views.CustomTextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:text="@string/title_appointments"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_12ssp" />
+</LinearLayout>

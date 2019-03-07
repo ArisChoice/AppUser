@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/rectangle_blue_drawable"
+    android:backgroundTint="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hair cut and hair wash"
+            android:textColor="@color/color_black"
+            android:textStyle="bold" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/service_status"
+            android:layout_width="@dimen/_80ssp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_unselected_type_drawable"
+            android:backgroundTint="@color/color_green"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:text="@string/str_paid"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/service_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="28 Sep 09:00 pm-10:00 pm"
+            android:textStyle="bold" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/service_amount"
+            android:layout_width="@dimen/_100ssp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="£ 0"
+            android:textColor="@color/color_black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

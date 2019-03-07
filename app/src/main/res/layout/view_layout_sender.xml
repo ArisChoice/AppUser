@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/senderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_40ssp"
+    android:layout_marginRight="@dimen/_10ssp"
+    android:layout_marginTop="@dimen/_5ssp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_50ssp"
+        android:layout_marginRight="@dimen/_5ssp"
+        android:layout_toLeftOf="@+id/imgUserImage"
+        android:orientation="vertical"
+        android:padding="@dimen/_5ssp">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_grey_background_sender"
+            android:backgroundTint="#9496A3"
+            android:gravity="right"
+            android:padding="@dimen/_10ssp"
+            android:text="Hi! how are you? Where are you?"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/txtMessageDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/imageView_msgReadStatus"
+                android:gravity="right"
+                android:text="1 Seconds ago"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/_10ssp" />
+
+            <ImageView
+                android:id="@+id/imageView_msgReadStatus"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgUserImage"
+        android:layout_width="@dimen/_45ssp"
+        android:layout_height="@dimen/_45ssp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/user1_copy"
+        android:visibility="gone"
+        app:roundAsCircle="true" />
+</RelativeLayout>

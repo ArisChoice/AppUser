@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10ssp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_70ssp">
+
+            <ImageView
+                android:id="@+id/image_expertise"
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:background="@drawable/circular_grey_border"
+                android:padding="@dimen/_15ssp"
+                android:src="@drawable/geometry" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/experties_count_txt_main"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:background="@drawable/circular_blue_background"
+                android:backgroundTint="@color/color_yellow"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="0.0"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_8ssp" />
+        </RelativeLayout>
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_experties" />
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_70ssp">
+
+            <ImageView
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:background="@drawable/circular_grey_border"
+                android:padding="@dimen/_15ssp"
+                android:src="@drawable/thumb_up" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/value_count_txt_main"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:background="@drawable/circular_blue_background"
+                android:backgroundTint="@color/color_yellow"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="0.0"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_8ssp" />
+        </RelativeLayout>
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_value" />
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_70ssp">
+
+            <ImageView
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:background="@drawable/circular_grey_border"
+                android:padding="@dimen/_15ssp"
+                android:src="@drawable/water_hand" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/hygenic_count_txt_main"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:background="@drawable/circular_blue_background"
+                android:backgroundTint="@color/color_yellow"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="0.0"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_8ssp" />
+        </RelativeLayout>
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_hygenic" />
+    </LinearLayout>
+</LinearLayout>

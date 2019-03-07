@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_white_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_10ssp"
+            android:paddingRight="@dimen/_10ssp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/str_select_districts"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:minHeight="@dimen/_350sdp"
+        android:orientation="vertical">
+
+        <com.app.barber.views.CustomEditText
+            android:id="@+id/search_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/rectangle_grey_border"
+            android:hint="@string/str_search_districts"
+            android:maxLines="1"
+            android:padding="@dimen/_10ssp"
+            android:singleLine="true"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <include layout="@layout/view_district_dialog" />
+
+
+    </LinearLayout>
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rectangle_blue_drawable"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_continue"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="gone" />
+</LinearLayout>

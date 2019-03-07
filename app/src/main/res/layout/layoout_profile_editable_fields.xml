@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10ssp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2ssp"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_first_name"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/_10ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2ssp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/str_first_name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="First name"
+                    android:textColorHint="@color/color_grey" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10ssp"
+                    android:src="@drawable/arrow_right_copy" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_view" />
+            <!---->
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:id="@+id/layout_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2ssp"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_first_name"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/_10ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2ssp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/str_first_name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/str_last_name"
+                    android:textColorHint="@color/color_grey" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10ssp"
+                    android:src="@drawable/arrow_right_copy" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_view" />
+            <!---->
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:id="@+id/layout_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2ssp"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_first_name"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/_10ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2ssp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/str_first_name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/str_phone_number"
+                    android:textColorHint="@color/color_grey" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10ssp"
+                    android:src="@drawable/arrow_right_copy" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_view" />
+            <!---->
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2ssp"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_first_name"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/_10ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2ssp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/str_first_name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/str_email"
+                    android:textColorHint="@color/color_grey" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10ssp"
+                    android:src="@drawable/arrow_right_copy" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_view" />
+            <!---->
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

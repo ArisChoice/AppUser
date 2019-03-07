@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/filter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_default_click"
+        android:drawableRight="@drawable/check_"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10ssp"
+        android:paddingRight="@dimen/_10ssp"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="@string/str_ratings"
+        android:textColor="@color/color_grey"
+        android:textSize="@dimen/_13ssp" />
+</android.support.constraint.ConstraintLayout>

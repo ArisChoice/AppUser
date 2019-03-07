@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_cream_white_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_common_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_dark_grey"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_250sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_copy" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/share_whatsapp_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/wattsapp_copy"
+                        android:drawablePadding="@dimen/_10ssp"
+                        android:drawableRight="@drawable/arrow_right_copy"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/str_share_trim_check_on_wtsapp"
+                        android:textColor="@color/color_light_grey_blue" />
+
+                    <include layout="@layout/divider_view_grey" />
+
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/share_fb_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/fb_wh_copy"
+                        android:drawablePadding="@dimen/_10ssp"
+                        android:drawableRight="@drawable/arrow_right_copy"
+                        android:drawableTint="@color/colorPrimary"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/str_share_trim_check_on_fb"
+                        android:textColor="@color/color_light_grey_blue" />
+
+                    <include layout="@layout/divider_view_grey" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/share_email_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/email_copy"
+                        android:drawablePadding="@dimen/_10ssp"
+                        android:drawableRight="@drawable/arrow_right_copy"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/str_share_trim_check_on_mail"
+                        android:textColor="@color/color_light_grey_blue" />
+
+                    <include layout="@layout/divider_view_grey" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/wattsapp_copy"
+                        android:drawablePadding="@dimen/_10ssp"
+                        android:drawableRight="@drawable/arrow_right_copy"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/str_share_trim_check_on_share_other"
+                        android:textColor="@color/color_light_grey_blue"
+                        android:visibility="gone" />
+
+                    <include layout="@layout/divider_view_grey" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    '
+</android.support.constraint.ConstraintLayout>

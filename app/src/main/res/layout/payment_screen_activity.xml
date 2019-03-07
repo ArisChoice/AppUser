@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_cream_white_background">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_common_toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:background="@drawable/rectangle_grey_border"
+                    android:orientation="horizontal">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/card_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounder_blue_drawable"
+                        android:gravity="center"
+                        android:padding="@dimen/_10ssp"
+                        android:text="@string/str_card_"
+                        android:textColor="@color/color_white" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/cash_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/_10ssp"
+                        android:text="@string/str_cash" />
+                </LinearLayout>
+
+                <!--<com.stripe.android.view.CardInputWidget
+                    android:id="@+id/card_input_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+                <com.app.barber.views.CustomTextView
+                    android:id="@+id/cash_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:minHeight="@dimen/_300sdp"
+                    android:text="@string/str_block_hours"
+                    android:textColor="@color/color_green"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/layout_card_details_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/saved_cards_recyclar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_10ssp"
+                        android:paddingTop="@dimen/_10ssp"
+                        android:text="@string/str_debit_credit_card"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <com.braintreepayments.cardform.view.CardForm
+                        android:id="@+id/card_form"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <CheckBox
+                        android:id="@+id/save_check_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10ssp"
+                        android:layout_marginTop="@dimen/_10ssp"
+
+                        android:text="@string/str_save_this_card" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/Confirm_proceed_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rounder_blue_drawable"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/str_Proceed"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

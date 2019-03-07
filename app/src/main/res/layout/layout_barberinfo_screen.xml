@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/_5sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10ssp">
+
+                <RatingBar
+                    style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3" />
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10ssp"
+                    android:drawableRight="@drawable/arrow_right_copy"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Based on clients review"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10ssp"
+                android:paddingRight="@dimen/_10ssp"
+                android:text="@string/str_sample_desc"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/_11ssp" />
+
+            <include layout="@layout/divider_view_grey" />
+
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10ssp"
+                android:paddingRight="@dimen/_10ssp"
+                android:paddingTop="@dimen/_10ssp"
+                android:text="@string/str_contact_num"
+                android:textColor="@color/color_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10ssp"
+                    android:text="072349872"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13ssp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_35sdp"
+                    android:paddingRight="@dimen/_35sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:src="@drawable/call_copy"
+                    android:text="@string/str_call"
+                    android:textColor="@color/color_white"
+                    android:tint="@color/colorPrimary" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_view_grey" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background"
+        android:drawable="@drawable/selected_rate_ico"
+        android:bottom="7dp"/>
+
+    <item android:id="@android:id/secondaryProgress"
+        android:drawable="@android:color/transparent"
+        android:bottom="7dp"/>
+
+    <item android:id="@android:id/progress"
+        android:drawable="@drawable/unselected_rate_ico"
+        android:bottom="7dp"/>
+
+</layer-list>

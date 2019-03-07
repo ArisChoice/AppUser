@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/add_image"
+        android:layout_width="@dimen/_80ssp"
+        android:layout_height="@dimen/_80ssp"
+        android:layout_margin="@dimen/_2ssp"
+        android:background="@drawable/rect_blue_border"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_25ssp" />
+</LinearLayout>

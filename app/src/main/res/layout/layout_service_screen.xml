@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.app.barber.views.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/color_serch_view_back"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="@dimen/_10ssp"
+            android:drawableTint="@color/color_grey"
+            android:hint="@string/str_search_for_services"
+            android:padding="@dimen/_5ssp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/color_grey"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_common_recyclay_view" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

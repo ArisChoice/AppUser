@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/booking_time_slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="@dimen/_10ssp"
+            android:padding="@dimen/_5sdp"
+            android:text="00:00 PM-00:00PM"
+            android:textColor="@color/color_black" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/booking_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_black" />
+
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/booking_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/calendar"
+            android:drawablePadding="@dimen/_10ssp"
+            android:padding="@dimen/_5sdp"
+            android:text="Sunday, December 18"
+            android:textColor="@color/color_black" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/booking_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_black" />
+
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/booking_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="@dimen/_10ssp"
+            android:maxLines="2"
+            android:padding="@dimen/_5sdp"
+            android:text="address"
+            android:textColor="@color/color_black" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/booking_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_black" />
+
+    </LinearLayout>
+
+    <!---->
+    <LinearLayout
+        android:id="@+id/service_and_prise_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/booking_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_10ssp"
+            android:padding="@dimen/_5sdp"
+            android:text="services"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_13ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/booking_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
+</LinearLayout>

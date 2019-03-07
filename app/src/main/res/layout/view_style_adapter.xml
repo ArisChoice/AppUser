@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/type_main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        android:background="@drawable/rectangle_grey_border"
+        android:gravity="center_vertical">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/text_type_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_afro_caribbean"
+            android:textColor="@color/color_grey" />
+
+    </LinearLayout>
+</LinearLayout>

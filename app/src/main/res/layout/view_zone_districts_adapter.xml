@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp">
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/district_text_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_background"
+        android:drawableRight="@drawable/check_"
+        android:drawableTint="@color/color_app_blue"
+        android:padding="@dimen/_10ssp"
+        android:text="District"
+        android:textColor="@color/color_black" />
+
+</LinearLayout>
